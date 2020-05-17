@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  color: #ffffff;
+  padding: 4px 10px 4px 10px;
+  margin-top: 7px;
+}
+
+table {
+  width: 100%;
+  margin: 30px auto 0px auto;
+  table-layout: fixed;
+}
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+  height: auto;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(8, 8, 8);
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(19, 15, 15);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #f50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#gal-img {
+  width: 100%;
+  display: block;
+  height: 250px;
+}
+
+#app {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: gold;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.left {
+  width: 50%;
+  float: left;
+}
+.right {
+  width: 50%;
+  float: right;
+}
+@media (min-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.grid-group {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 500px) {
+  .grid-group {
+    margin-bottom: 0;
+  }
+}
+.grid-group-meta {
+  margin: 2rem 0;
+}
+
+.grid-group-meta h3,
+.grid-group-meta h4 {
+  margin: 0;
+}
+.grid-group-meta h3 {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.grid-group-meta h4 {
+  font-style: italic;
+}
+
+.grid-group-text p {
+  line-height: 1.5;
+  text-align: justify;
+}
+.transparent {
+  background-color: white;
+  border: none;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
