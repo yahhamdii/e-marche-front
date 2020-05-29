@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "browserslist": [
     ">0.2%",
@@ -33,6 +34,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
-    "eslint-plugin-react": "7.11.0"
+    "eslint-plugin-react": "7.11.0",
+    "@percy/storybook": "^3.3.0",
+    "@storybook/react": "^5.3.19"
   }
 }
